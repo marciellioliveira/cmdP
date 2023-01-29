@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<telas> <!-- Root -->
+    <tela name="escolha">
+     
+        <conteudo>
+            Você pode utilizar os seguintes comandos!
+
+            Digite ................. Tela
+            -----------------------------
+
+            cadastrar .......... Cadastro
+            entrar ................ Login
+            alterar ....... Alterar Login
+            ajuda ................. Ajuda
+            sair ................... Sair
+        </conteudo>
+    </tela>
+    <tela name="bemvindo">
+        <titulo>Bem Vindo!</titulo>
+        <conteudo>Olá, bem vindo ao cmdP
+        Programa desenvolvido em Python para aprender Python
+        com linha de comando imitando um terminal!</conteudo>
+    </tela>
+    <tela name="ajuda">
+        <conteudo>
+        Ajuda
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices mauris sed dui fermentum aliquet. Nunc pretium varius metus, non facilisis nisl convallis in. Quisque et justo vehicula, sagittis lacus vitae, pellentesque erat. Mauris sit amet metus tempus, blandit odio eu, dictum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et elit ultricies, maximus mauris at, pharetra nibh. Sed venenatis, est non maximus porta, quam magna aliquam tortor, rutrum euismod massa magna eu dui. Nulla imperdiet quam eget arcu fermentum, dictum commodo eros malesuada. In nec nulla ac mi suscipit tincidunt vitae ac sem.</conteudo>
+
+    </tela>
+    <tela name="cadastrar">
+        <titulo>Cadastro</titulo>
+        <conteudo>Cadastrar usuário!</conteudo>
+    </tela>
+    <tela name="entrar">
+        <titulo>Entrar</titulo>
+        <conteudo>Digite seus dados de Login!</conteudo>
+    </tela>
+    <tela name="alterar">
+        <titulo>Alterar Cadastro</titulo>
+        <conteudo>Altere seus dados de Cadastro</conteudo>
+    </tela>
+    <tela name="sair">
+        <titulo>Tchau!</titulo>
+        <conteudo>Vamos sentir sua falta!</conteudo>
+    </tela>
+    <tela name="erro">
+        <titulo>Erro</titulo>
+        <conteudo>Erro do programa</conteudo>
+    </tela>
+    <tela name="menu">
+        <titulo>Menu</titulo>
+        <conteudo>Ao usar o comando "Menu", você pode voltar para o menu!</conteudo>
+    </tela>
+    <tela name="about_python">
+        <conteudo>
+        About Python
+
+        Python is a popular programming language.
+        Python can be used on a server to create web applications.
+        </conteudo>
+    </tela>
+    <tela name="syntax">
+        <conteudo>
+        Execute Python Syntax
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices mauris sed dui fermentum aliquet. Nunc pretium varius metus, non facilisis nisl convallis in. Quisque et justo vehicula, sagittis lacus vitae, pellentesque erat. Mauris sit amet metus tempus, blandit odio eu, dictum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et elit ultricies, maximus mauris at, pharetra nibh. Sed venenatis, est non maximus porta, quam magna aliquam tortor, rutrum euismod massa magna eu dui. Nulla imperdiet quam eget arcu fermentum, dictum commodo eros malesuada. In nec nulla ac mi suscipit tincidunt vitae ac sem.</conteudo>
+    </tela>
+
+    <tela name="comment">
+        <conteudo>Python Comments
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices mauris sed dui fermentum aliquet. Nunc pretium varius metus, non facilisis nisl convallis in. Quisque et justo vehicula, sagittis lacus vitae, pellentesque erat. Mauris sit amet metus tempus, blandit odio eu, dictum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et elit ultricies, maximus mauris at, pharetra nibh. Sed venenatis, est non maximus porta, quam magna aliquam tortor, rutrum euismod massa magna eu dui. Nulla imperdiet quam eget arcu fermentum, dictum commodo eros malesuada. In nec nulla ac mi suscipit tincidunt vitae ac sem.</conteudo>
+    </tela>
+
+    <tela name="variables">
+        <conteudo>Python Variables
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices mauris sed dui fermentum aliquet. Nunc pretium varius metus, non facilisis nisl convallis in. Quisque et justo vehicula, sagittis lacus vitae, pellentesque erat. Mauris sit amet metus tempus, blandit odio eu, dictum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et elit ultricies, maximus mauris at, pharetra nibh. Sed venenatis, est non maximus porta, quam magna aliquam tortor, rutrum euismod massa magna eu dui. Nulla imperdiet quam eget arcu fermentum, dictum commodo eros malesuada. In nec nulla ac mi suscipit tincidunt vitae ac sem.</conteudo>
+    </tela>
+
+    <tela name="data_types">
+        <conteudo>Python Data Types
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices mauris sed dui fermentum aliquet. Nunc pretium varius metus, non facilisis nisl convallis in. Quisque et justo vehicula, sagittis lacus vitae, pellentesque erat. Mauris sit amet metus tempus, blandit odio eu, dictum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et elit ultricies, maximus mauris at, pharetra nibh. Sed venenatis, est non maximus porta, quam magna aliquam tortor, rutrum euismod massa magna eu dui. Nulla imperdiet quam eget arcu fermentum, dictum commodo eros malesuada. In nec nulla ac mi suscipit tincidunt vitae ac sem.</conteudo>
+    </tela>
+
+    <tela name="numbers">
+        <conteudo>Python Numbers
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices mauris sed dui fermentum aliquet. Nunc pretium varius metus, non facilisis nisl convallis in. Quisque et justo vehicula, sagittis lacus vitae, pellentesque erat. Mauris sit amet metus tempus, blandit odio eu, dictum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et elit ultricies, maximus mauris at, pharetra nibh. Sed venenatis, est non maximus porta, quam magna aliquam tortor, rutrum euismod massa magna eu dui. Nulla imperdiet quam eget arcu fermentum, dictum commodo eros malesuada. In nec nulla ac mi suscipit tincidunt vitae ac sem.</conteudo>
+    </tela>
+
+    <tela name="casting">
+        <conteudo>Python Casting
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices mauris sed dui fermentum aliquet. Nunc pretium varius metus, non facilisis nisl convallis in. Quisque et justo vehicula, sagittis lacus vitae, pellentesque erat. Mauris sit amet metus tempus, blandit odio eu, dictum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et elit ultricies, maximus mauris at, pharetra nibh. Sed venenatis, est non maximus porta, quam magna aliquam tortor, rutrum euismod massa magna eu dui. Nulla imperdiet quam eget arcu fermentum, dictum commodo eros malesuada. In nec nulla ac mi suscipit tincidunt vitae ac sem.</conteudo>
+    </tela>
+
+    <tela name="strings">
+        <conteudo>Python Strings
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices mauris sed dui fermentum aliquet. Nunc pretium varius metus, non facilisis nisl convallis in. Quisque et justo vehicula, sagittis lacus vitae, pellentesque erat. Mauris sit amet metus tempus, blandit odio eu, dictum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et elit ultricies, maximus mauris at, pharetra nibh. Sed venenatis, est non maximus porta, quam magna aliquam tortor, rutrum euismod massa magna eu dui. Nulla imperdiet quam eget arcu fermentum, dictum commodo eros malesuada. In nec nulla ac mi suscipit tincidunt vitae ac sem.</conteudo>
+    </tela>
+
+    <tela name="booleans">
+        <conteudo>Python Booleans
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices mauris sed dui fermentum aliquet. Nunc pretium varius metus, non facilisis nisl convallis in. Quisque et justo vehicula, sagittis lacus vitae, pellentesque erat. Mauris sit amet metus tempus, blandit odio eu, dictum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et elit ultricies, maximus mauris at, pharetra nibh. Sed venenatis, est non maximus porta, quam magna aliquam tortor, rutrum euismod massa magna eu dui. Nulla imperdiet quam eget arcu fermentum, dictum commodo eros malesuada. In nec nulla ac mi suscipit tincidunt vitae ac sem.</conteudo>
+    </tela>
+
+    <tela name="operators">
+        <conteudo>Python Operators
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultrices mauris sed dui fermentum aliquet. Nunc pretium varius metus, non facilisis nisl convallis in. Quisque et justo vehicula, sagittis lacus vitae, pellentesque erat. Mauris sit amet metus tempus, blandit odio eu, dictum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et elit ultricies, maximus mauris at, pharetra nibh. Sed venenatis, est non maximus porta, quam magna aliquam tortor, rutrum euismod massa magna eu dui. Nulla imperdiet quam eget arcu fermentum, dictum commodo eros malesuada. In nec nulla ac mi suscipit tincidunt vitae ac sem.</conteudo>
+    </tela>
+    <tela name="telas">
+     
+        <conteudo>
+            Você pode utilizar os seguintes comandos!
+
+            Digite ................. Tela
+            -----------------------------
+
+            about_python .......... Sobre a Linguagem
+            syntax ........................... Syntax
+            comment ......................... Comment
+            variables ..................... Variables
+            data_types ................... Data Types
+
+            numbers ................... Numbers
+            casting ................... Casting
+            strings ................... Strings
+            booleans .................. Booleans
+            operators ................. Operators
+        </conteudo>
+    </tela>
+
+    <!-- <tela name="">
+        <titulo></titulo>
+        <conteudo></conteudo>
+    </tela> -->
+
+</telas>
