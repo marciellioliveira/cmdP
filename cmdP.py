@@ -5,6 +5,15 @@ import os
 
 clear = lambda: os.system('cls')
 
+sobre_programa = {
+    'desenvolvedora': 'Marcielli Oliveira',
+    'dia_desenvolvimento': '29/01/2023 - Domingo',
+    'porque': 'Esse programa foi feito com o intúito de mostrar meus conhecimentos em estrutura de dados. Esse foi meu primeiro programa feito em Python',
+    'linkedin': 'https://www.linkedin.com/in/marciellioliveira/'
+}
+
+estruturas_utilizadas = {"Tree", 'List', 'Tuple', 'Set'}
+
 
 #Funçõe dos modulos
 def generateXML(file_name, novo_usuario, nova_senha):
@@ -32,11 +41,17 @@ if file_existe:
     treeUsuario = et.parse('cadastros/usuarios.xml')
     rootUsuario = treeUsuario.getroot()
 
-def escolha():
-    for element in root.findall("./tela[@name='escolha']/"):
+
+
+def menu():
+    for element in root.findall("./tela[@name='menu']/"):
         print(element.text)
         cmd_digitado = input("Digite um comando: ")
-        # print(f"CMD Digitado: {cmd_digitado}")        
+        # print(f"CMD Digitado: {cmd_digitado}")      
+
+        if cmd_digitado == 'sobre':
+            clear()
+            sobre()  
         
         for tela in root.findall('tela'):
             nome_tela = tela.get('name')
@@ -51,14 +66,14 @@ def escolha():
                     cadastrar()
                 elif cmd_digitado == 'alterar':
                     clear()
-                    alterar()
+                    alterar()                
                 elif cmd_digitado == 'sair':
                     clear()
                     sair()
                 elif cmd_digitado == 'ajuda':
                     clear()
                     ajuda()
-                    escolha()
+                    menu()
                 
 def telas():
     for element in root.findall("./tela[@name='telas']/"):
@@ -111,6 +126,9 @@ def telas():
                     clear()
                     operators()
                     break
+                elif nome_tela == 'menu':
+                    menu()
+                    break
         break   
     telas()            
          
@@ -129,31 +147,29 @@ def cadastrar():
         generateXML('./cadastros/usuarios.xml', usuario, senha)
         print("Usuário cadastrado com sucesso!")
         break
-    escolha()
+    menu()
 
 
 def entrar():  
-    for element in root.findall("./tela[@name='entrar']/"):
-        print(element.text)
-        usuario_entrada = input("Qual o seu usuário? ")
-        senha_entrada = input("Qual a sua senha? ")               
-    
-        for login in rootUsuario.findall('usuario/login'):
-            for senha in rootUsuario.findall('usuario/senha'):
-                
-                if usuario_entrada == login.text and senha_entrada == senha.text:
-                    bemvindo()
-                else:
-                    print('Usuario ou senha invalidos')
-                    # tentar_novamente = input("Tentar novamente? S - SIM | N - NÃO: ") 
-
-                    # if tentar_novamente.lower == 's':
-                    #     escolha()
-                    #     break
-                    # else:
-                    #     exit() 
-                    #     break                         
-        break
+    file_existe1 = exists('cadastros/usuarios.xml')
+    if file_existe1:        
+        for element in root.findall("./tela[@name='entrar']/"):
+            print(element.text)
+            usuario_entrada = input("Qual o seu usuário? ")
+            senha_entrada = input("Qual a sua senha? ")               
+        
+            for login in rootUsuario.findall('usuario/login'):
+                for senha in rootUsuario.findall('usuario/senha'):
+                    
+                    if usuario_entrada == login.text and senha_entrada == senha.text:
+                        bemvindo()
+                    else:
+                        print("Usuário ou senha errados! Tente novamente.")
+                        menu()                     
+            break
+    else:
+        print("Usuário ou senha errados! Tente novamente.")
+        menu()
     
 
 def alterar():
@@ -165,7 +181,7 @@ def alterar():
         print("Usuário alterado com sucesso!")
         print(f"Seu novo usuário é: {usuario}\nSua nova senha é: {senha}")
         break
-    escolha()
+    menu()
 
 
 def sair():
@@ -244,10 +260,41 @@ def operators():
         print(element.text)
         break
 
+#Sobre o Programa
+def sobre():
+    gostos_pessoais = ("Amo animais, em especial gatinhos.", "Amo música.", "Amo ler livros")
+    idiomas = {"Português - Nativo", "Inglês - Intermediário"}
+
+    idiomas.add("Espanhol - Básico")
+    print("Sobre o Programa!")    
+        
+    print(f'\nDesenvolvedora: {sobre_programa["desenvolvedora"]}')
+    print(f'\Dia: {sobre_programa["dia_desenvolvimento"]}')
+    print(f'\Linkedin: {sobre_programa["linkedin"]}')
+
+    print('\nGostos pessoais')
+    for tuple in gostos_pessoais:
+        print(tuple)
+    
+    print("\nIdiomas")
+    for thiset in idiomas:
+        print(thiset)
+
+    print("\nEstruturas de Dados utilizadas nesse projeto")
+    for estruturas in estruturas_utilizadas:
+        print(estruturas)
+
+
+    
+
+
+
+       
+
+
 #Tela Inicial
 def inicio():
-    clear()
-    escolha()   
+    menu()   
 
 inicio()
 

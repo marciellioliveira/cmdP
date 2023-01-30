@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <telas> <!-- Root -->
-    <tela name="escolha">
+    <tela name="menu">
      
         <conteudo>
             Você pode utilizar os seguintes comandos!
@@ -12,6 +12,7 @@
             entrar ................ Login
             alterar ....... Alterar Login
             ajuda ................. Ajuda
+            sobre .......... Sobre o cmdP
             sair ................... Sair
         </conteudo>
     </tela>
@@ -118,12 +119,13 @@
             comment ......................... Comment
             variables ..................... Variables
             data_types ................... Data Types
+            numbers ......................... Numbers
+            casting ......................... Casting
+            strings ......................... Strings
+            booleans ....................... Booleans
+            operators ..................... Operators
 
-            numbers ................... Numbers
-            casting ................... Casting
-            strings ................... Strings
-            booleans .................. Booleans
-            operators ................. Operators
+            menu ....................... Menu Inicial
         </conteudo>
     </tela>
 
